@@ -1,0 +1,12 @@
+<section class="contact">
+  <h2>Contact Us</h2>
+  <% if (typeof success !== 'undefined' && success) { %>
+    <p class="success">Thank you for your message! We’ll get back to you soon.</p>
+  <% } %>
+  <form method="POST" action="/contact" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>

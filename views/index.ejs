@@ -1,0 +1,17 @@
+<section class="home">
+  <h2>Welcome to Florist</h2>
+  <p>Fresh, vibrant, and beautiful flowers for every occasion.</p>
+  <a class="btn" href="/products">Shop Now</a>
+</section>
+
+<section class="satisfaction">
+  <h2>What Our Customers Say</h2>
+  <div class="review-grid">
+    <% reviews.forEach(review => { %>
+      <div class="review-card">
+        <p>"<%= review.text %>"</p>
+        <h4>- <%= review.name %></h4>
+      </div>
+    <% }) %>
+  </div>
+</section>
